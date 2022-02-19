@@ -18,9 +18,7 @@ class PropertiesController < ApplicationController
 
   # GET /properties/1/edit
   def edit
-    if @property.stations.last.route_name == ""
-      else
-        1.times { @property.stations.build }
+      1.times { @property.stations.build }
     end
   end
 

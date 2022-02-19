@@ -18,8 +18,10 @@ class PropertiesController < ApplicationController
 
   # GET /properties/1/edit
   def edit
-      1.times { @property.stations.build }
-    end
+    if @property.stations.last.route_name == ""
+      else
+        1.times { @property.stations.build }
+      end
   end
 
   # POST /properties or /properties.json

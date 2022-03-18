@@ -21,7 +21,7 @@ class PropertiesController < ApplicationController
     if @property.stations.last.route_name == ""
       else
         1.times { @property.stations.build }
-    end
+      end
   end
 
   # POST /properties or /properties.json
